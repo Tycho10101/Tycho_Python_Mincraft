@@ -13,7 +13,7 @@ blocks = [
     load_texture('assets/slime.png'), # 0
     load_texture('assets/grass.png'), # 1
     load_texture('assets/stone.png'), # 2
-    load_texture('assets/gold.png'),  # 3
+    load_texture('assets/wood.png'),  # 3
     load_texture('assets/glass.png'),  # 4
     load_texture('assets/slime.png'),  # 5
 ]
