@@ -1,8 +1,6 @@
-# Minecraft Clone
+# Tycho Python Mincraft V.1.1
 
-Minecraft clone using Python Ursina game engine!
-
-![](result.png)
+A Minecraft clone using Python Ursina game engine!
 
 ## Dependency
 
