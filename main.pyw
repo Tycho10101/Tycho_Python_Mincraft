@@ -8,6 +8,7 @@ window.exit_button.visible = False
 mouse.locked = False
 
 punch = Audio('assets/punch', autoplay=False)
+music = Audio('assets/music', autoplay=True)
 
 blocks = [
     load_texture('assets/slime.png'), # 0
