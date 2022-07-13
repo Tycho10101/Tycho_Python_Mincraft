@@ -1,4 +1,4 @@
-# Tycho Python Mincraft V.1.2
+# Tycho Python Mincraft V.1.3
 
 Minecraft clone using Python Ursina game engine!
 

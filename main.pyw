@@ -7,7 +7,8 @@ window.fps_counter.enabled = True
 window.exit_button.visible = False
 mouse.locked = False
 
-punch = Audio('assets/punch', autoplay=False)
+mine = Audio('assets/Mine', autoplay=False)
+place = Audio('assets/Place', autoplay=False)
 music = Audio('assets/music', autoplay=True)
 
 blocks = [
@@ -50,7 +51,6 @@ hand = Entity(
 
 def update():
     if held_keys['right mouse'] or held_keys['left mouse']:
-        punch.play()
         hand.position = Vec2(0.4, -0.5)
     else:
         hand.position = Vec2(0.6, -0.6)
@@ -74,8 +74,10 @@ class Voxel(Button):
     def input(self, key):
         if self.hovered:
             if key == 'right mouse down':
+                place.play()
                 Voxel(position=self.position + (mouse.normal)*2, texture=blocks[block_id])
             elif key == 'left mouse down':
+                mine.play()
                 destroy(self)
 
 for z in range(-10, 10, 2):
