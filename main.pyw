@@ -12,16 +12,16 @@ punch = Audio('assets/punch', autoplay=False)
 music = Audio('assets/music', autoplay=True)
 
 blocks = [
-    load_texture('assets/slime.png'), # 0
+    load_texture('assets/leaves.png'), # 0
     load_texture('assets/grass.png'),
     load_texture('assets/dirt.png'),
     load_texture('assets/stone.png'),
     load_texture('assets/wood.png'),
     load_texture('assets/glass.png'),
     load_texture('assets/slime.png'),
-    load_texture('assets/slime.png'),
-    load_texture('assets/slime.png'),
-    load_texture('assets/slime.png'), # 9
+    load_texture('assets/log.png'),
+    load_texture('assets/leaves.png'),
+    load_texture('assets/leaves.png'), # 9
     load_texture('assets/bedrock.png'), # over limit
 ]
 
@@ -64,94 +64,13 @@ def update():
         player.position = Vec3(0,1,0)
 
 #hotbar
-hotbar1 = Entity(
+hotbar = Entity(
     parent=camera.ui,
     model='assets/block',
-    texture='assets/hotbar/grass.png',
-    scale=0.05,
+    texture='assets/hotbar/hotbar.png',
+    scale=0.5,
     rotation=Vec3(0, 0, 0),
-    position=Vec2(-0.45, -0.4375)
-)
-
-hotbar2 = Entity(
-    parent=camera.ui,
-    model='assets/block',
-    texture='assets/hotbar/dirt.png',
-    scale=0.05,
-    rotation=Vec3(0, 0, 0),
-    position=Vec2(-0.35, -0.4375)
-)
-
-hotbar3 = Entity(
-    parent=camera.ui,
-    model='assets/block',
-    texture='assets/hotbar/stone.png',
-    scale=0.05,
-    rotation=Vec3(0, 0, 0),
-    position=Vec2(-0.25, -0.4375)
-)
-
-hotbar4 = Entity(
-    parent=camera.ui,
-    model='assets/block',
-    texture='assets/hotbar/wood.png',
-    scale=0.05,
-    rotation=Vec3(0, 0, 0),
-    position=Vec2(-0.15, -0.4375)
-)
-
-hotbar5 = Entity(
-    parent=camera.ui,
-    model='assets/block',
-    texture='assets/hotbar/glass.png',
-    scale=0.05,
-    rotation=Vec3(0, 0, 0),
-    position=Vec2(-0.05, -0.4375)
-)
-
-hotbar6 = Entity(
-    parent=camera.ui,
-    model='assets/block',
-    texture='assets/hotbar/slime.png',
-    scale=0.05,
-    rotation=Vec3(0, 0, 0),
-    position=Vec2(0.05, -0.4375)
-)
-
-hotbar7 = Entity(
-    parent=camera.ui,
-    model='assets/block',
-    texture='assets/hotbar/wip.png',
-    scale=0.05,
-    rotation=Vec3(0, 0, 0),
-    position=Vec2(0.15, -0.4375)
-)
-
-hotbar8 = Entity(
-    parent=camera.ui,
-    model='assets/block',
-    texture='assets/hotbar/wip.png',
-    scale=0.05,
-    rotation=Vec3(0, 0, 0),
-    position=Vec2(0.25, -0.4375)
-)
-
-hotbar9 = Entity(
-    parent=camera.ui,
-    model='assets/block',
-    texture='assets/hotbar/wip.png',
-    scale=0.05,
-    rotation=Vec3(0, 0, 0),
-    position=Vec2(0.35, -0.4375)
-)
-
-hotbar10 = Entity(
-    parent=camera.ui,
-    model='assets/block',
-    texture='assets/hotbar/wip.png',
-    scale=0.05,
-    rotation=Vec3(0, 0, 0),
-    position=Vec2(0.45, -0.4375)
+    position=Vec2(0, -0.4375)
 )
 
 # bedrock layer
